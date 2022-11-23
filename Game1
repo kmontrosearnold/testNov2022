@@ -1,0 +1,77 @@
+# import random generator
+
+from random import randint
+
+import sys
+
+# print the rules
+
+print("The Rules of Rock paper scissor game are:")
+
+print("Rock beats Scissors, Scissors beats Paper, Paper beats Rock. There in no Lizard or Spock.")
+
+print("----------------------------------------------------")
+
+# simultaenous choice
+
+want_to_play = ['y', 'Y']
+
+while True:
+
+    my_choice = input("Now enter: 1 for Rock, 2 for Paper or 3 for Scissors.\n")
+
+    comp_choice = randint(1,3)
+
+# DO ME if my_choice != 1,2,3 print ("Invalid input, please re-enter.") GOTO my-choice input
+
+# print the result
+
+    if (comp_choice ==1 and my_choice =='1') : print("We have both selected Rock. This is a draw.") # score_draw + 1
+
+    elif (comp_choice ==1 and my_choice =='2') : print("I selected rock. Your paper beats my rock. Well done.")  # score_win + 1
+
+    elif (comp_choice ==1 and my_choice =='3') : print("I selected rock. My rock beats your scissors. Loser.")  # score_lose + 1
+
+    elif (comp_choice ==2 and my_choice =='1') : print("I selected paper. My paper beats your rock. Loser.")  # score_lose + 1
+
+    elif (comp_choice ==2 and my_choice =='2') : print("We have both selected paper. This is a draw.") # score_draw + 1
+
+    elif (comp_choice ==2 and my_choice =='3') : print("I selected paper. My paper loses to your scissors. Well done.")  # score_win + 1
+
+    elif (comp_choice ==3 and my_choice =='1') : print("I selected scissors. Your rock beats my scissors. Well done.")  # Score_Win + 1
+
+    elif (comp_choice ==3 and my_choice =='2') : print("I selected scissors. My scissors beats your paper. Loser.")  # score_lose + 1
+
+    elif (comp_choice ==3 and my_choice =='3') : print("We have both selected Scissors. This is a draw.") # score_draw + 1
+
+    print("-----------------------------------------------------")
+
+# DO ME print the score
+
+    # print ("you have won " score_win " lost " score_lose " and drawn " score_draw ".
+
+# Continue the game
+
+    want_to_play =input("Do you want to play again Y or N.\n")
+
+    if (want_to_play =='Y') : print ("You're on.")
+
+    if (want_to_play =='y') : print ("You're on.")
+
+    if (want_to_play =='N'):
+
+        print ("See you later.")
+
+        break
+
+    sys.exit
+
+    if (want_to_play =='n'):
+
+        print ("See you later.")
+
+        break
+
+    sys.exit
+
+# DO ME if my_choice != Y,y,N,n print ("Invalid input, please re-enter.") GOTO want_to_play input
