@@ -75,3 +75,5 @@ while True:
     sys.exit
 
 # DO ME if my_choice != Y,y,N,n print ("Invalid input, please re-enter.") GOTO want_to_play input
+
+# why are we doing this?
